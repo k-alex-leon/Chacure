@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1030494524622",
+    "project_id": "chacure-af99c",
+    "storage_bucket": "chacure-af99c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030494524622:android:dda0ec8888c76986c36c9f",
+        "android_client_info": {
+          "package_name": "com.example.chacure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030494524622-t9eidk6pt2j5sluhmhpmk3maooj67l78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chacure",
+            "certificate_hash": "c923ac40283c90e5f3c381ec9e980b0659869ed0"
+          }
+        },
+        {
+          "client_id": "1030494524622-qhp20ttn6ln4dd5lg4g0qur5j1hg8lhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ4EvUAouX6Hfnq0B_GRqmUKSswMABSCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030494524622-qhp20ttn6ln4dd5lg4g0qur5j1hg8lhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

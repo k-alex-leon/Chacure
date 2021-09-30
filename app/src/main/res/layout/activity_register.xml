@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.RegisterActivity"
+    android:background="@drawable/custom_popup"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/arrowGoBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_arrow_back_gray"
+        android:padding="7dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputUserName"
+            android:hint="Username"
+            android:inputType="text"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="280dp"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmailUser"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            style="@style/TextAppearance.AppCompat"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputConfirmPassword"
+            style="@style/TextAppearance.AppCompat"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutBtnRegister"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue">
+
+            <ImageButton
+                android:id="@+id/imgBtnRegister"
+                android:background="@color/light_blue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_send_white"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

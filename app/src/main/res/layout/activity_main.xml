@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <ImageView
+            android:id="@+id/chacureLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/chacurelogo"
+            android:layout_marginTop="50dp"/>
+        
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="WELCOME!"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutEmailPassContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmailUser"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                style="@style/TextAppearance.AppCompat"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutBtnLogin"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue">
+
+                <ImageButton
+                    android:id="@+id/imgBtnLogin"
+                    android:background="@color/light_blue"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_send_white"/>
+
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <!-- Button Icon Sign in -->
+
+            <LinearLayout
+                android:id="@+id/layoutBtn"
+            android:layout_marginTop="40dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+                android:padding="5dp"
+                android:background="@color/light_blue">
+                
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_email"
+                    android:padding="10dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/btnSignInEmailAndPassword"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sign in with email"
+                    />
+
+            </LinearLayout>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnSignInGoogle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textSize="14dp"
+                android:gravity="bottom|center"/>
+            <TextView
+                android:id="@+id/txtRegisterUser"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Register now"
+                android:textColor="@color/light_blue"
+                android:textStyle="bold"
+                android:gravity="bottom|center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
